@@ -22,6 +22,9 @@ body {
 .header {
     background-color: white;
     grid-area: header;
+    display: grid;
+    grid-template-columns: 700px 400px;
+    grid-template-rows: 90px 90px;
 }
 
 .main {
@@ -43,4 +46,3 @@ body {
 .trending {
 
 }
-
