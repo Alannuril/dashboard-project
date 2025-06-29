@@ -1,115 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard-odin-project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Flexibel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- --------SIDEBAR-------- -->
+    <!-- THIS IS THE SIDEBAR -->
 
     <div class="sidebar">
-        <div class="sidebar-header">
-            <img src="" alt="">
-            <h3>Dashboard</h3>        
-        </div>
-
-        <nav class="sidebar">
-            <ul class="header-list">
-                <li class="nav-item">
-                    <span class="Home"></span>
-                    <p>Home</p>
-                </li>
-                
-                <li class="nav-item">
-                    <span class="Profile"></span>
-                    <p>Profile</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="massages"></span>
-                    <p>massages</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="History"></span>
-                    <p>History</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="Tasks"></span>
-                    <p>Tasks</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="Communities"></span>
-                    <p>Communities</p>
-                </li>
-            </ul>
-        </nav>
-
-        <br>
-
-        <nav class="settings">
-            <ul class="footer-list">
-                <li class="nav-item">
-                    <span class="Setting"></span>
-                    <p>Setting</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="Support"></span>
-                    <p>Support</p>
-                </li>
-
-                <li class="nav-item">
-                    <span class="Privasi"></span>
-                    <p>Privasi</p>
-                </li>
+        <h2><i class="fas fa-chart-line"></i> Dashboard</h2>
+        <nav>
+            <ul>
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-user"></i> Profile</li>
+                <li><i class="fas fa-envelope"></i> Messages</li>
+                <li><i class="fas fa-history"></i> History</li>
+                <li><i class="fas fa-tasks"></i> Tasks</li>
+                <li><i class="fas fa-users"></i> Communities</li>
             </ul>
         </nav>
     </div>
 
-    <!-- --------HEADER-------- -->
+    <!-- THIS IS THE HEADER -->
 
-    <div class="header">
+    <header class="header">
         <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search...">
         </div>
-            
-        <div class="profile-corner">
-            <i class="fa-solid fa-bell"></i>
-            <img src="img/profile.jpg" alt="deskripsi gambar" width="30px">
+        <div class="profile">
+            <i class="fas fa-bell"></i>
+            <img src="https://i.pravatar.cc/40" alt="Profile">
             <p>Alan Nuril</p>
         </div>
+    </header>
 
-        <div class="profile-header">
-            <img src="img/profile.jpg" alt="deskripsi profile" width="50px">
-            <p>Hi There,</p>
-            <h3>Alan Nuril (@alan)</h3>
-        </div>
+    <!-- THIS IS THE MAIN -->
+     
+    <main class="main">
+        <section class="project">
+            <h3>Projects</h3>
+        </section>
 
-        <div class="buttons">
-            <button>new</button>
-        </div>
-    </div>
+        <aside class="announcements">
+            <h3>Announcements</h3>
+        </aside>
 
-    <!-- --------MAIN-------- -->
+        <aside class="trending">
+            <h3>Trending</h3>
+        </aside>
+    </main>
 
-    <div class="main">
-        <div class="project">
-
-        </div>
-        <div class="announcements">
-
-        </div>
-        <div class="trending">
-
-        </div>
-    </div>
 </body>
 </html>
