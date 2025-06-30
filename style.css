@@ -12,10 +12,10 @@ body {
     "sidebar header"
     "sidebar main";
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
 }
 
-/* THIS IS TEH SIDE-BAR */
+/* ----- THIS IS TEH SIDE-BAR ----- */
 
 .sidebar {
   grid-area: sidebar;
@@ -40,13 +40,13 @@ body {
   cursor: pointer;
 }
 
-/* THIS IS THE HEADER */
+/* ----- THIS IS THE HEADER ----- */
 
 .header {
   grid-area: header;
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: 
     "search-bar profile"
     "header-profile button-header";
@@ -54,45 +54,66 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   position: relative;
   z-index: 1;
+  gap: 15px;
 }
 
 .search-bar {
+  grid-area: search-bar;
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
 .search-bar input {
-  padding: 8px;
-  width: 60%;
+  padding: 7px;
+  width: 80%;
   height: 30px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e8edf2;
 }
 
 .profile {
+  grid-area: profile;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: end;
+  gap: 25px;
+  padding: 0 20px;
 }
 
 .profile img, .header-profile img {
   border-radius: 50%;
 }
 
+.header-profile img {
+  width: 50px;
+  height: 50px;
+}
+
 .header-profile {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .button-header {
+  grid-area: button-header;
   display: flex;
-  justify-content: space-around;
-  padding: 8px;
+  justify-content: end;
+  gap: 20px;
+  padding: 10px 5px;
 }
 
-/* THIS IS THE MAIN */
+.button-header button {
+  border-radius: 25px;
+  border: none;
+  background-color: #1992d4;
+  color: white;
+  padding: 8px 30px;
+}
+
+/* ----- THIS IS THE MAIN ----- */
 
 .main {
   grid-area: main;
@@ -100,10 +121,15 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "project announcements"
+    "project trending";
   gap: 20px;
 }
 
 .project {
+  grid-area: project;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -113,7 +139,6 @@ body {
 .announcements, .trending {
   background-color: white;
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
