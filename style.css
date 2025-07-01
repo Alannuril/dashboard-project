@@ -139,21 +139,20 @@ body {
 .main {
   grid-area: main;
   background-color: #f1f5f9;
-  padding: 5px 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  padding-right: 15px;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
     "project announcements"
     "project trending";
-  gap: 20px;
+  gap: 15px;
 }
 
 .project {
   grid-area: project;
-  padding: 10px;
+  padding-left: 10px;
   border-radius: 10px;
-  /* box-shadow: 2px 2px 10px rgba(0,0,0,0.1); */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr auto;
@@ -161,6 +160,7 @@ body {
 
 .project h3{
   padding-left: 13px;
+  padding-top: 10px;
 }
 
 .projet-card {
@@ -207,7 +207,12 @@ body {
   margin: 10px 0;
 }
 
-.announce-card {
+.announcements h3, .trending h3 {
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+.announce-card, .profiles {
   background-color: white;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
   display: flex;
@@ -217,8 +222,24 @@ body {
   border-radius: 13px;
 }
 
-.announce p{
+.trending {
+  display: grid;
+  margin-bottom: 10px;
+}
+
+.prof-card {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.announce p, .desc p{
   font-size: 0.8em;
+}
+
+.prof-card {
+  display: flex;
 }
 
 /* Responsive Layout */
